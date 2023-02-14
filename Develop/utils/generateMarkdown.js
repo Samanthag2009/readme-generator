@@ -14,7 +14,29 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+##Description
+${data.description}
+
+##Installation
+${data.installation}
+
+##Usage
+${data.usage}
+
+##Contributing
+${data.contributing}
+
+##License
+Licensed by the ${data.license}
+
+##Contact Me
+Find me on Github: [${data.username}] (https://github.com${data.username})
+Email me: ${data.email}
+
+
 `;
 }
 
 module.exports = generateMarkdown;
+
+//ln 16 - badge goes there
