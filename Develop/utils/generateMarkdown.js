@@ -1,6 +1,20 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+let licenseType = data.license
+let yourLicense = ''
+
+if(licenseType === 'Apache License 2.0') {
+  yourLicense = `[img src="https://img.shields.io/badge/License-Apache%202.0-green"]`
+  } else if (licenseType === 'MIT License') {
+  yourLicense = `[img src="https://img.shields.io/badge/License-MIT-yellow"]`
+  } else if (licenseType === "GNU General Public License") {
+  yourLicense = `[img src="https://img.shields.io/badge/License-GNU-blue"]`
+  } else {
+  yourLicense = ''
+  }
+return yourLicense;
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -27,7 +41,9 @@ ${data.usage}
 ${data.contributing}
 
 ##License
-Licensed by the ${data.license}
+
+`renderLicenseBadge();`
+
 
 ##Contact Me
 Find me on Github: [${data.username}] (https://github.com${data.username})
