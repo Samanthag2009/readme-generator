@@ -1,13 +1,11 @@
 // TODO: Include packages needed for this application
 
-console.log("working")
-
 //Inquirer to prompt
 const inquirer = require('inquirer');
 //fs for file generation
 const fs = require("fs");
 //link back to generateMarkdown.js
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 //This is the starter code provided, Having trouble understandign what to do outside of a prompt
